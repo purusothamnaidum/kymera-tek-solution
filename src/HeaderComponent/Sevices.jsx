@@ -26,26 +26,6 @@ const data = [
     Description:
       " Utilizing AWS DevOps, we streamline our software development processes, seamlessly integrating development and operations to achieve agility and efficiency.",
   },
-  {
-    image: "/Images/HomePage/Courses/Testing.jpg",
-    Description:
-      "Combining manual and automation testing methodologies, we ensure comprehensive software quality assurance for our clients.",
-  },
-  {
-    image: "/Images/HomePage/Courses/Python.jpg",
-    Description:
-      "Python serves as the cornerstone of our development arsenal, empowering us to craft versatile and efficient solutions for our clients. With its clean syntax and extensive libraries, we leverage Python to create robust applications.",
-  },
-  {
-    image: "/Images/java.webp",
-    Description:
-      "Our company excels in Java full-stack development, harnessing the language's robustness to craft end-to-end solutions for diverse business needs. Leveraging Java's versatility.",
-  },
-  {
-    image: "/Images/HomePage/Courses/CyberSecurity.jpg",
-    Description:
-      "At our company, cybersecurity is paramount. We employ cutting-edge techniques and technologies to safeguard our clients' digital assets from evolving threats.",
-  },
 ];
 
 const Services = () => {

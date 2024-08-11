@@ -54,10 +54,10 @@ const SecondBox = () => {
   const handleSocialMediaClick = (socialMedia) => {
     const urls = {
       faInstagram: "https://www.instagram.com/kymeratek_solutions/",
-      faYoutube: "https://youtube.com/@techjobsolution?si=P4sXHJMIVO-sIv6G",
+      faYoutube: "https://www.youtube.com/@KymeraTekSolutions",
       faTwitter: "https://www.twitter.com/yourprofile",
-      faFacebook: "https://www.facebook.com/techjobsolution?mibextid=kFxxJD",
-      faLinkedin: "https://www.linkedin.com/company/tech-job-solution/",
+      faFacebook: "https://www.facebook.com/kymera-tek-solutions",
+      faLinkedin: "https://www.linkedin.com/company/unavailable/",
     };
     const url = urls[socialMedia];
     if (url) {

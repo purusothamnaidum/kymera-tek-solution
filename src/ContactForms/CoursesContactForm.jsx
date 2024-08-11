@@ -9,7 +9,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { useParams } from "react-router-dom";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { Add_Student_Api } from "../Utils/constants";
+import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   const { courseTitle } = useParams();
@@ -18,23 +18,33 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const sendEmail = (templateParams) => {
-    fetch(Add_Student_Api, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(templateParams),
-    })
-      .then((response) => response.text()) // Use .text() instead of .json() to log the full response
-      .then((text) => {
-        console.log('Response Text:', text); // Log the response text
-        const data = JSON.parse(text); // Parse JSON manually
-        console.log('SUCCESS!', data);
+    emailjs.init("userId");
+    emailjs.send("serviceId", "templateId", templateParams).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
         setIsSubmitted(true);
-      })
-      .catch((error) => {
-        console.error('FAILED...', error);
-      });
+      },
+      function (err) {
+        console.log("FAILED...", err);
+      }
+    );
+    // fetch(Add_Student_Api, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',src/FixedComponent.jsx
+    //   },
+    //   body: JSON.stringify(templateParams),
+    // })
+    //   .then((response) => response.text()) // Use .text() instead of .json() to log the full response
+    //   .then((text) => {
+    //     console.log('Response Text:', text); // Log the response text
+    //     const data = JSON.parse(text); // Parse JSON manually
+    //     console.log('SUCCESS!', data);
+    //     setIsSubmitted(true);
+    //   })
+    //   .catch((error) => {
+    //     console.error('FAILED...', error);
+    //   });
   };
 
   const formik = useFormik({

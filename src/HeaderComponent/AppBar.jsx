@@ -61,15 +61,6 @@ const courseMenuItemStyle = {
     color: "#4B0082",
   },
 };
-const mobileCourseItemStyle = {
-  textAlign: "center",
-  fontWeight: "bold",
-  "&:hover": {
-    backgroundColor: "#f0f0f0",
-    color: "#4B0082",
-  },
-  pl: 4, // Adjust padding as needed
-};
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -184,7 +175,7 @@ function DrawerAppBar(props) {
         )}
       </List>
       <Divider />
-      <Link to="/career">
+      {/* <Link to="/career">
         <Button
           type="submit"
           sx={careersButtonStyle}
@@ -193,7 +184,7 @@ function DrawerAppBar(props) {
           Careers
         </Button>
       </Link>
-      <Button sx={signUpButtonStyle}>Sign Up</Button>
+      <Button sx={signUpButtonStyle}>Sign Up</Button> */}
     </Box>
   );
 
@@ -276,13 +267,14 @@ function DrawerAppBar(props) {
               )
             )}
           </Box>
-          {isMobile ? null : (
+          {/* Added Comment, once page is up and running and careers are available, we can use  */}
+          {/* {isMobile ? null : (
             <Link to="/careers">
               <Button type="submit" sx={careersButtonStyle}>
                 Careers
               </Button>
             </Link>
-          )}
+          )} */}
           <Menu
             id="courses-menu"
             anchorEl={anchorEl}
@@ -303,27 +295,6 @@ function DrawerAppBar(props) {
               </MenuItem>
             ))}
           </Menu>
-          {isMobile ? null : (
-            <Button
-              color="inherit"
-              sx={{
-                border: "2px solid #fff",
-                borderRadius: "5px",
-                height: "40px",
-                width: "100px",
-                color: "black",
-                "&:hover": {
-                  backgroundColor: "#fff",
-                  color: "#4B0082",
-                },
-                marginRight: "50px",
-                fontSize: "14px",
-                fontWeight: 600,
-              }}
-            >
-              Sign Up
-            </Button>
-          )}
         </Toolbar>
       </AppBar>
       <nav>

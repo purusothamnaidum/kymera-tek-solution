@@ -29,7 +29,6 @@ const TestimonialCard = ({ avatarSrc, name, text, rating }) => {
   const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
   return (
-    
     <Card sx={{ mr: "25px", height: 330 }}>
       <CardContent>
         <Grid container spacing={2} alignItems="center">
@@ -79,35 +78,40 @@ const TestimonialSlider = () => {
   const testimonials = [
     {
       avatarSrc: "https://example.com/avatar1.jpg",
-      name: "Sravan Kumar",
-      text: "Best training institute in Hyderabad. You can get individual attention from the trainers, with only 10 people in the batch. I have taken offline training, so that I can send sometime in the institute for training and to improve my communication skills. Overall it helped me a lot in getting a good job and improve my career.",
-      rating: 5,
-    },
-    {
-      avatarSrc: "https://example.com/avatar1.jpg",
-      name: "Zeyaul Hoda",
-      text: "I completed the Power BI training program. The instructors are exceptionally knowledgeable and skilled in Power BI, making complex concepts easy to understand.Apart from technical skills there are very well organised soft skill trainer who will guide and make you understand about the environment of IT industry, interview, behaviour in organisation and all the rules of organisation..",
-      rating: 4,
-    },
-    {
-      avatarSrc: "https://example.com/avatar1.jpg",
-      name: "RANA DEEP",
-      text: "I'm sharing this with own experience which I had earlier,this is the purely training centre which you had to gain skills.After that job placements would be provided if you selected it's your luck if not company won't put any efforts to give a job . Think and join if you want to learn some skills.",
-      rating: 3,
-    },
-    {
-      avatarSrc: "https://example.com/avatar1.jpg",
-      name: "Sunil Ravula",
-      text: "The environment of the institute and the trainers are very friendly to learn the technologies and the management really helped me to crack the interview along with the communication skills.Happy learner of power BI at TJS,thanks to the team TJS.",
+      name: "Karthik V",
+      text: "The DevSecOps with AWS training was a game-changer for me. The hands-on experience and real-world examples provided by the instructor helped me master the concepts quickly. I feel more confident in my ability to secure and manage cloud environments.",
       rating: 4,
     },
     {
       avatarSrc: "https://example.com/avatar2.jpg",
-      name: "Mounika Kanagala",
-      text: "Tech job solution provides the best training in all technologies with real time experience with a real time work environment.The Trainers &  Management really supported me to crack the interview with a best ctc.Thank you team TJS...",
+      name: "Swathi T",
+      text: "This training was exactly what I needed to advance my career. The instructor's deep knowledge of AWS and DevSecOps made complex topics easy to understand. The practical sessions were invaluable, and I now have the skills to implement DevSecOps practices in my organization.",
+      rating: 4,
+    },
+    {
+      avatarSrc: "https://example.com/avatar1.jpg",
+      name: "Purusotham U",
+      text: "Taking this course was one of the best decisions I've made for my professional development. The training covered everything from basic to advanced topics, and the real-world applications were particularly helpful. I'm now able to apply what I've learned directly to my work.",
       rating: 5,
     },
-    // Add more testimonials as needed
+    {
+      avatarSrc: "https://example.com/avatar1.jpg",
+      name: "Kiran T",
+      text: "The DevSecOps with AWS course exceeded my expectations. The curriculum was comprehensive, and the instructor's teaching style was engaging. The best part was the focus on security practices integrated into the DevOps pipeline, which is crucial in today's tech landscape.",
+      rating: 4,
+    },
+    {
+      avatarSrc: "https://example.com/avatar1.jpg",
+      name: "Raju B",
+      text: "I was impressed with the depth of the content and the practical exercises. The course covered everything from the basics to advanced topics, making it suitable for both beginners and experienced professionals.",
+      rating: 4,
+    },
+    {
+      avatarSrc: "https://example.com/avatar2.jpg",
+      name: "Vishan Singh",
+      text: "The training provided a comprehensive overview of DevSecOps principles and AWS tools. The instructors were top-notch, and the interactive sessions kept me engaged throughout. I highly recommend this course to anyone looking to enhance their DevSecOps skills.",
+      rating: 4,
+    },
   ];
 
   const settings = {

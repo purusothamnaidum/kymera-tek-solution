@@ -1,37 +1,15 @@
-// AWSDevops.js
-import React from "react";
-import { Helmet } from "react-helmet";
-import { useMediaQuery } from '@mui/material';
-import AWSCourseOverview from "./AWSCourseOverview";
-import AWSVideo from "./AWSVideo";
-import AWSCourseContent from "./AWSCourseContent";
-import AWSProgramForYou from "./AWSProgramForYou";
-import AWSSampleCerticate from "./AWSSampleCerticate";
-import Feedback from "./Feedback";
-import AWSCourseFee from "./AWSCourseFee";
-import ContactForm from "../ContactForms/CoursesContactForm";
-import SkillsList from "../ReUsableComponent/Skills";
+import React, { useEffect } from "react";
 
 const AWSDevops = () => {
-  const isMobile = useMediaQuery('(max-width:768px)');
+  useEffect(() => {
+    window.open(
+      "https://kymerateksolutions.blogspot.com/2024/08/devsecops-cloud-course-structure.html",
+      "_blank"
+    );
+    window.location.replace("/");
+  });
 
-  return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>AWS Devops</title>
-      </Helmet>
-      {isMobile && <ContactForm/>}
-      <AWSCourseOverview />
-      <AWSVideo />
-      <AWSCourseContent />
-      <AWSProgramForYou />
-      <SkillsList/>
-      <AWSSampleCerticate />
-      <Feedback />
-      <AWSCourseFee />
-    </>
-  );
+  return <></>;
 };
 
 export default AWSDevops;

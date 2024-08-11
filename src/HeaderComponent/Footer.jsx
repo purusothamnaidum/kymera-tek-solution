@@ -73,7 +73,7 @@ const Footer = () => {
           sx={{}}
         >
           <Grid item>
-            <a href="https://www.facebook.com/techjobsolution?mibextid=kFxxJD">
+            <a href="https://www.facebook.com/pages/kymera-tek-solutions/">
               <FontAwesomeIcon
                 icon={faFacebook}
                 style={{
@@ -84,7 +84,7 @@ const Footer = () => {
             </a>
           </Grid>
           <Grid item>
-            <a href="https://www.linkedin.com/company/tech-job-solution/">
+            <a href="https://www.linkedin.com/company/kymera-tek-solutions/">
               <FontAwesomeIcon
                 icon={faLinkedin} // Replaced with LinkedIn icon
                 style={{
@@ -95,7 +95,7 @@ const Footer = () => {
             </a>
           </Grid>
           <Grid item>
-            <a href="https://www.instagram.com/techjobsolution?igsh=ZnlhNXhnMzViazZq">
+            <a href="https://www.instagram.com/kymeratek_solutions/">
               <FontAwesomeIcon
                 icon={faInstagram}
                 style={{
@@ -106,7 +106,7 @@ const Footer = () => {
             </a>
           </Grid>
           <Grid item>
-            <a href="https://youtube.com/@techjobsolution?si=P4sXHJMIVO-sIv6G">
+            <a href="https://www.youtube.com/@KymeraTekSolutions">
               <FontAwesomeIcon
                 icon={faYoutube} // Added YouTube icon
                 style={{
@@ -141,7 +141,13 @@ const Footer = () => {
           <li style={{ marginBottom: "10px" }}>
             <Typography sx={{ fontSize: "15px" }}>
               <Link
-                to="/course/devsecops"
+                onClick={() => {
+                  window.open(
+                    "https://kymerateksolutions.blogspot.com/2024/08/devsecops-cloud-course-structure.html",
+                    "_blank"
+                  );
+                  window.location.replace("/");
+                }}
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 DevSecOps
@@ -151,7 +157,14 @@ const Footer = () => {
           <li style={{ marginBottom: "10px" }}>
             <Typography sx={{ fontSize: "15px" }}>
               <Link
-                to="/course/full-stack-development"
+                onClick={() => {
+                  window.open(
+                    "https://kymerateksolutions.blogspot.com/2024/08/devsecops-cloud-course-structure.html",
+                    "_blank"
+                  );
+                  window.location.replace("/");
+                }}
+                to="/"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Full Stack Development
@@ -161,7 +174,14 @@ const Footer = () => {
           <li style={{ marginBottom: "10px" }}>
             <Typography sx={{ fontSize: "15px" }}>
               <Link
-                to="/course/hr-training"
+                onClick={() => {
+                  window.open(
+                    "https://kymerateksolutions.blogspot.com/2024/08/devsecops-cloud-course-structure.html",
+                    "_blank"
+                  );
+                  window.location.replace("/");
+                }}
+                to="/"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 HR Training
@@ -255,10 +275,7 @@ const Footer = () => {
             </Typography>
           </Grid>
         </Grid>
-
-        <img
-          src="/Images/razorpay.svg"
-          alt="payment"
+        <div
           style={{
             width: "70%",
             padding: "25px",
