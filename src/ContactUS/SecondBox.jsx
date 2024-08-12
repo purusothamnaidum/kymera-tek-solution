@@ -11,25 +11,24 @@ import {
 import emailjs from "emailjs-com";
 
 const labelStyle = {
-  fontWeight: 700,
   fontSize: "16px",
-  color: "#1F305E",
-  fontFamily: "Open Sans, sans-serif",
+  fontWeight: "bold",
+  marginBottom: "8px",
+  color: "#333",
+  display: "block",
 };
 
 const inputStyle = {
   width: "100%",
-  borderRadius: "3px",
-  borderBottom: "4px solid #1F305E",
-  color: "#1F305E",
-  marginBottom: "10px",
-  border: "none",
-  outline: "none",
+  padding: "12px",
   fontSize: "16px",
-  padding: "15px",
-  backgroundColor: "white",
+  borderRadius: "8px",
+  border: "1px solid #ccc",
+  marginBottom: "20px",
+  boxSizing: "border-box",
+  fontFamily: "Arial, sans-serif",
+  transition: "border-color 0.3s ease",
 };
-
 const socialIconStyle = {
   fontSize: "40px",
   margin: "0 15px",
@@ -113,71 +112,79 @@ const SecondBox = () => {
     >
       {/* First box */}
       <Box
-        sx={{
-          width: isMobile ? "100%" : "48%",
-          height: isMobile ? "400px" : "400px",
-          display: "flex",
-          flexDirection: "column",
-          padding: "20px",
-          marginRight: isMobile ? 0 : "6%",
-        }}
-      >
-        <Box sx={{ display: "flex", flexDirection: "row" }}>
-          <Box sx={{ flex: 1, marginRight: isMobile ? 0 : "40px" }}>
-            <label style={labelStyle}>Name</label>
-            <input
-              type="text"
-              placeholder="Enter Your Name"
-              style={{
-                ...inputStyle,
-                height: "50px",
-              }}
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </Box>
-
-          <Box sx={{ flex: 1, marginLeft: isMobile ? "20px" : "10px" }}>
-            <label style={labelStyle}>Email</label>
-            <input
-              type="email"
-              placeholder="Enter Your Email"
-              style={{
-                ...inputStyle,
-                height: "50px",
-              }}
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </Box>
+      sx={{
+        width: isMobile ? "100%" : "48%",
+        height: "auto",
+        display: "flex",
+        flexDirection: "column",
+        padding: isMobile ? "20px" : "40px",
+        marginRight: isMobile ? 0 : "6%",
+        bgcolor: "#cde5d9",
+        borderRadius: "12px",
+        boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
+      }}
+    >
+      <Box sx={{ display: "flex", flexDirection: isMobile ? "column" : "row" }}>
+        <Box sx={{ flex: 1, marginRight: isMobile ? 0 : "20px" }}>
+          <label style={labelStyle}>Name</label>
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            style={{
+              ...inputStyle,
+              height: "50px",
+            }}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
         </Box>
 
-        <label style={labelStyle}>Message</label>
-        <textarea
-          placeholder="Enter Your Message"
-          style={{
-            ...inputStyle,
-            height: "170px",
-          }}
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <button
-          onClick={handleSubmit}
-          style={{
-            backgroundColor: "#1F305E",
-            color: "white",
-            border: "none",
-            padding: "15px 0px",
-            cursor: "pointer",
-            fontSize: "18px",
-            width: "100%",
-            borderRadius: "5px",
-          }}
-        >
-          Submit
-        </button>
+        <Box sx={{ flex: 1, marginTop: isMobile ? "20px" : 0 }}>
+          <label style={labelStyle}>Email</label>
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            style={{
+              ...inputStyle,
+              height: "50px",
+            }}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </Box>
       </Box>
+
+      <label style={labelStyle}>Message</label>
+      <textarea
+        placeholder="Enter Your Message"
+        style={{
+          ...inputStyle,
+          height: "150px",
+          resize: "none",
+        }}
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+      />
+
+      <button
+        onClick={handleSubmit}
+        style={{
+          backgroundColor: "#1F305E",
+          color: "white",
+          border: "none",
+          padding: "15px",
+          cursor: "pointer",
+          fontSize: "18px",
+          width: "100%",
+          borderRadius: "8px",
+          transition: "background-color 0.3s ease",
+        }}
+        onMouseOver={(e) => (e.target.style.backgroundColor = "#17294D")}
+        onMouseOut={(e) => (e.target.style.backgroundColor = "#1F305E")}
+      >
+        Submit
+      </button>
+    </Box>
       {/* Second box */}
       <Box
         sx={{

@@ -178,6 +178,7 @@ const ImageComponent = () => {
               width: isSmallScreen ? "90%" : "650px",
               height: isSmallScreen ? "100%" : "400px",
               top: isSmallScreen ? "5%" : "20%",
+              borderRadius: "50%",
               left: isSmallScreen ? "5%" : "5%",
               position: "absolute",
               animation: isSmallScreen

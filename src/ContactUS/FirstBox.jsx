@@ -26,15 +26,15 @@ const FirstBox = () => {
         sx={{
           width: "100%",
           height: isMobile ? "1200px" : "200px",
-          bgcolor: "#1F305E",
           zIndex: "0",
+          bgcolor: "#90AFC5"
         }}
       />
 
       <Box
         sx={{
           position: "absolute",
-          top: isMobile ? "34%" : "40%",
+          top: isMobile ? "34%" : "30%",
           left: "50%",
           transform: "translate(-50%, -50%)",
           display: "flex",

@@ -212,7 +212,7 @@ function DrawerAppBar(props) {
             <Link to="/">
               <img
                 src="/Images/HomePage/logo.jpeg"
-                alt="TechJobs Logo"
+                alt="Kymera Tek"
                 style={{ height: "60px", width: "auto", marginLeft: "40px" }}
               />
             </Link>
@@ -222,15 +222,14 @@ function DrawerAppBar(props) {
             sx={{
               flexGrow: 1,
               display: { xs: "none", sm: "block" },
-              textAlign: "center",
-              marginLeft: "-80px", // Adjust the value as per your requirement
+              textAlign: "left"
             }}
           >
             <Link to="/">
               <img
                 src="/Images/HomePage/logo.jpeg"
-                alt="TechJobs Logo"
-                style={{ height: "70px", width: "auto" }}
+                alt="Kymera Tek"
+                style={{ height: "80px", width: "auto", marginLeft: "80px"}}
               />
             </Link>
           </Typography>

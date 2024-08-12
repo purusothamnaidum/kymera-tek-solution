@@ -46,7 +46,7 @@ const Services = () => {
   return (
     <Box
       sx={{
-        bgcolor: "#D9B08C",
+        bgcolor: "#C7E4F0",
         padding: "50px",
         margin: isMobile ? "5px" : "0px",
       }}
@@ -81,7 +81,6 @@ const Services = () => {
         </Typography>
       </Box>
       <Typography
-        color="#D1E8E2"
         style={{
           textAlign: "left",
           padding: "15px",

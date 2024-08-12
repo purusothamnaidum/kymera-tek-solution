@@ -25,7 +25,7 @@ const ChooseUs = () => {
 
   const options = [
     "EXPERT TRAINERS",
-    "CAPSTONE PROJECTS",
+    "PROJECTS",
     "INHOUSE INTERNSHIP",
     "PLACEMENTS",
   ];
@@ -57,14 +57,14 @@ const ChooseUs = () => {
       ],
     },
     {
-      title: "Capstone Projects",
+      title: "Projects",
       paragraphs: [
         {
           text: "At Kymera Tek, we believe in a practical learning approach. Making students work on real-time data helps in giving them a clear visualization of how it is applied in the real world.",
           style: paraStyle,
         },
         {
-          text: "Considering this, we follow a collaborative group-oriented approach to learn with discussion forums and get hands-on with capstone projects to make our trainees good team players and strong thinkers to solve problems.",
+          text: "Considering this, we follow a collaborative group-oriented approach to learn with discussion forums and get hands-on with projects to make our trainees good team players and strong thinkers to solve problems.",
           style: {
             ...paraStyle,
             marginTop: isMobile ? "10px" : "40px",

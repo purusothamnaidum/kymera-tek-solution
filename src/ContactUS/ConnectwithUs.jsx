@@ -14,22 +14,20 @@ const ContactUsPage = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        height: "auto",
       }}
     >
       <Box
         sx={{
           width: "100%",
           alignItems: "center",
-          bgcolor: "#1F305e",
-          padding: isMobile ? "50px" : "100px",
+          padding: isMobile ? "50px" : "30px",
+          bgcolor: '#90AFC5'
         }}
       >
         <Typography
           sx={{
             fontSize: isMobile ? "40px" : "60px",
             textAlign: "center",
-            color: "white",
           }}
         >
           Contact Us
@@ -46,8 +44,8 @@ const ContactUsPage = () => {
         sx={{
           width: "100%",
           height: isMobile ? "900px" : "700px",
-          bgcolor: "#C0C0C0",
           zIndex: "0",
+          bgcolor: "#FFE8D4"
         }}
       />
     </Box>
